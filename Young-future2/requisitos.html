@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisitos</title>
+    <!-- Add a viewport meta tag to make the page responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" type="img" href="img/enciclopedia.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #navbar {
+            background-color: #d0c2cf;
+        }
+        body {
+            background-color: #F0FAFF;
+        }
+        @import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+        #r1 {
+            margin-top: 10%;
+            text-align: center;
+            border: 2px solid;
+            background-color: #F2E1CB;
+            font-size: 2rem; /* Use relative font size */
+        }
+        #r2 {
+            background-color: #CBE4F2;
+            margin-top: 3%;
+        }
+        #r3 {
+            padding-top: 2%;
+            text-align: center;
+            font-size: 1.5rem; /* Use relative font size */
+        }
+        #cf {
+            padding: 0;
+            margin: 0;
+        }
+        #lir {
+            font-size: 1.2rem; /* Use relative font size */
+        }
+
+        /* Adjust margins and padding for smaller screens */
+        @media (max-width: 775px) {
+            #r1 {
+                margin-top: 15%;
+            }
+            #r3 {
+                font-size: 1.2rem;
+            }
+            #r2 {
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
+            #lir {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header >
+        <div class="container-fluid" >
+            <div class="row">
+            <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.php">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active navbar-brand" aria-current="page" href="requisitos.html">Requisitos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link navbar-brand" href="contacto.php" >Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link navbar-brand" href="nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbar-brand" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                            Cuenta
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="registro.php">Registrarse</a></li>
+                            <li><a class="dropdown-item" href="inicioseccion.php">Iniciar sesión</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <section>
+        <div class="container-fluid" id="cf">
+            <div class="row">
+                <div class="col-2 col-md-4"></div>
+                <div class="col-8 col-md-4" id="r1">
+                    <p id="p1">REQUISITOS</p>
+                </div>
+                <div class="col-2 col-md-4"></div>
+            </div>
+            <div class="container-fluid" id="r2">
+                <div class="row">
+                    <div class="col-2 col-md-2"></div>
+                    <div class="col-8 col-md-8" id="r3">
+                        <p id="textr">Para acceder a nuestra plataforma, debe tener en cuenta los siguientes requisitos:</p>
+                        <ul id="lir" style="text-align: left;">
+                            <li>Tener más de 11 años para acceder a los cursos extracurriculares</li>
+                            <li>Estar graduado o graduarse este año para las becas universitarias</li>
+                            <li>Pertenecer a la institución educativa Lucrecio Jaramillo Vélez</li>
+                            <li>Brindar información de comuna, estrato, dirección y datos personales</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 col-md-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Add Bootstrap JS at the end of the body for proper functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
